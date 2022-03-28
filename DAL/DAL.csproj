@@ -42,11 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Aluno.cs" />
+    <Compile Include="Persistence\AlunoDAL.cs" />
+    <Compile Include="Persistence\Conexao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Conexao\" />
-    <Folder Include="Persistence\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
