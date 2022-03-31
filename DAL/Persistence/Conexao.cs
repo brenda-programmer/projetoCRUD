@@ -20,8 +20,7 @@ namespace DAL.Persistence
             try
             {
                 // Connection string
-                var texto = @"Data Source=BR-OLIVEIB2-01\SQLEXPRESS;Initial Catalog=master;Integrated Security=True";
-                Con = new SqlConnection(texto.Replace(@"\", @"\\")); 
+                Con = new SqlConnection(@"Data Source=BR-OLIVEIB2-01\SQLEXPRESS;Initial Catalog=master;Integrated Security=True");
                 Con.Open();
             }
             catch(Exception ex)

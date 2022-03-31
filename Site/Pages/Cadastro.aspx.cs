@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DAL.Model;
+using DAL.Persistence;
 
 namespace Site.Pages
 {
@@ -12,6 +14,33 @@ namespace Site.Pages
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnCadastrarAluno(object sender, EventArgs e)
+        {
+            try
+            {
+                Aluno a = new Aluno();
+
+                a.Nome = txtNome.Text;
+                a.Endereco = txtEndereco.Text;
+                a.Email = txtEmail.Text;
+
+                AlunoDAL d = new AlunoDAL();
+
+                d.Gravar(a);
+
+                lblMensagem.Text = "Aluno(a) " + a.Nome + " cadastrado(a) com sucesso!!!";
+            }
+            catch (Exception ex)
+            {
+
+                lblMensagem.Text = ex.Message;
+            }
+            finally
+            {
+
+            }
         }
     }
 }
