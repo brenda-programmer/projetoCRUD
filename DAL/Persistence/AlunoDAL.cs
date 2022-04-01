@@ -95,6 +95,7 @@ namespace DAL.Persistence
                 Cmd = new SqlCommand("select * from Aluno where Matricula=@v1", Con);
 
                 Cmd.Parameters.AddWithValue("@v1", Matricula);
+                Dr = Cmd.ExecuteReader(); //execução da leitura das informações no BD
 
                 Aluno a = null; // criando um espaço de memória - ponteiro
 

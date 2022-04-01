@@ -20,6 +20,7 @@
                     <asp:TextBox ID="txtMatricula" runat="server" CssClass="form-control" Width="5%" />
                     <br /> 
                     <asp:Button ID="btnPesquisa" runat="server" Text="Pesquisar" CssClass="btn btn-info btn-lg" OnClick="btnPesquisarAluno" />
+                    <a href="/Default.aspx" class="btn btn-default btn-lg">Voltar</a>
                     <br />  <br />
 
                     <asp:Panel ID="pnlDados" runat="server">
@@ -34,15 +35,16 @@
                         <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" Width="25%" />
                         <br />
 
+                        <asp:Button ID="btnExclui" runat="server" Text="Excluir" CssClass="btn btn-danger btn-lg" OnClick="btnExcluirAluno"/>
+                        <asp:Button ID="btnAtualiza" runat="server" Text="Atualizar" CssClass="btn btn-warning btn-lg" OnClick="btnAtualizarAluno" />
+   
+                    </asp:Panel>
+                    <br />
+                    
                         <p>
                             <asp:Label ID="lblMensagem" runat="server" />
                         </p>
 
-                        <asp:Button ID="btnExclui" runat="server" Text="Excluir" CssClass="btn btn-danger btn-lg"/>
-                        <asp:Button ID="btnAtualiza" runat="server" Text="Atualizar" CssClass="btn btn-warning btn-lg" />
-                        <a href="/Default.aspx" class="btn btn-default btn-lg">Voltar</a>
-
-                    </asp:Panel>
                 </div>
             </div>
         </div>
