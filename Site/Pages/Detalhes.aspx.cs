@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DAL.Model;
+using DAL.Persistence;
 
 namespace Site.Pages
 {
@@ -11,7 +13,20 @@ namespace Site.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            pnlDados.Visible = false;
+        }
 
+        protected void btnPesquisarAluno(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (Exception ex)
+            {
+
+                lblMensagem.Text = ex.Message;
+            }
         }
     }
 }

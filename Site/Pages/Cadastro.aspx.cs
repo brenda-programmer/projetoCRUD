@@ -31,6 +31,10 @@ namespace Site.Pages
                 d.Gravar(a);
 
                 lblMensagem.Text = "Aluno(a) " + a.Nome + " cadastrado(a) com sucesso!!!";
+
+                txtNome.Text = string.Empty;
+                txtEndereco.Text = string.Empty;
+                txtEmail.Text = string.Empty;
             }
             catch (Exception ex)
             {
