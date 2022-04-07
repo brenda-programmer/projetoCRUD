@@ -2,7 +2,7 @@
 
 O presente projeto foi criado utilizando C# no back-end e HTML, CSS e Bootstrap no front-end. Trata-se de um projeto CRUD (Create, Read, Update and Delete) com a finalidade de manipular dados de alunos. Para o armazenamento dos dados desse projeto foi utilizado o SQL Server.
 
-# Como rodar o projeto
+# Como rodar o Projeto
 
 - Para rodar o projeto você deverá ter o Visual Studio 2017 instalado na sua máquina;
 - Após descompactar o projeto, baixado daqui do Git, clicar no arquivo CRUD.sln, que será aberto no Visual Studio;
